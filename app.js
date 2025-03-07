@@ -8,6 +8,11 @@ function sortear() {
         return; // este return (que não retorna nada) interrompe a função
     };
 
+    if (quantidade > (ate - de + 1)) {
+        alert('Campo "Quantidade" deve ser menor ou igual ao intervalo informado no campo "Do número" até o campo "Até o número". Verifique!');
+        return; // essa proteção confere se o número inserido na variável 'quantidade' é maior que o intervalo das variaveis 'ate' e 'de';
+    };
+
     let sorteados = [];
     let numero;
 
